@@ -18,8 +18,8 @@ second_line(): moves to cursor to row 1, colum 0<br>
 clear() : clears the display<br>
 scroll(delay) : initiates a scroll thread which shifts the display to the left accroding to the given delay<br>
 toggle_scroll(state) : pauses or continues scrolling according to the boolean given (True/False)<br>
-create_custom(bitmap) : creates a custom charactor when given a bitmap as a list. The bit map must be 5x8 and the 1602a supports 8 charactors at a time.<br>
-                        [!!]home() is called afterwards to exit cgram[!!] Smiley bitmap example: ['00000','00000','01010','00000','10001','01110','00000','00000']<br>
+create_custom(bitmap) : creates a custom charactor when given a bitmap as a list. The bit map must be 5x8 and the 1602a supports 8 charactors at a time.
+                         home() is called afterwards to exit cgram. Smiley bitmap example: ['00000','00000','01010','00000','10001','01110','00000','00000']<br>
 Write_custom(index) : writes the custom character in the given index which are indexes 0-7<br>
 cursor(state) : enables the visual cursor according to the given boolean (True/False)<br>
 cursor_blinking(state) : enables cursor blinking according to the given boolean (True/False)<br>
